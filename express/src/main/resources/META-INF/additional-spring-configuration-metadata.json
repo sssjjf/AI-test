@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "test.name",
+      "type": "java.lang.String",
+      "description": "Description for test.name."
+    },
+    {
+      "name": "test.ages",
+      "type": "java.lang.String",
+      "description": "Description for test.ages."
+    }
+  ] }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.BranchOneExpressDao">
+    <insert id="insertExpress" >
+        INSERT INTO express_c1 (date,name,number,code,address,company) VALUES(#{date},#{name},#{number},#{code},#{address},#{company});
+    </insert>
+
+    <select id="findAll" resultType="com.example.demo.bean.BranchExpress">
+        SELECT * FROM  express_c1
+    </select>
+
+    <delete id="deleteExpressByCode">
+        DELETE FROM express_c1 WHERE code=#{code}
+    </delete>
+</mapper>
